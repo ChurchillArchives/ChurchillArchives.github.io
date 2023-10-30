@@ -9,3 +9,6 @@ search_enabled: true
 search_tokenizer_separator: /[\s/]+/
 heading_anchors: true
 color_scheme: "dark"
+
+ga_tracking: G-BKFCY4YMVP
+ga_tracking_anonymize_ip: true
