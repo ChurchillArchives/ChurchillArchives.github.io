@@ -1,5 +1,8 @@
 title: Churchill Archives Centre digital archives documentation
 
+logo: "/assets/ChurchillArchivesCentre-logo-white-RGB.png"
+favicon_ico: "/assets/favicon.png"
+
 remote_theme: just-the-docs/just-the-docs
 search_enabled: true
 search_tokenizer_separator: /[\s/]+/
