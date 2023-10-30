@@ -2,5 +2,8 @@
 title: Manipulation
 layout: default
 nav_order: 7
-has_children: true
 ---
+
+```
+ffmpeg -i "$in" -c:v libx264 -movflags faststart -pix_fmt yuv420p -vf yadif -c:a aac "$out" -hide_banner
+```
