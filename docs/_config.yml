@@ -18,21 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Churchill Archives Centre digital archives documentation
+email: archives@chu.cam.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Documentation for ingest and manipulation of born digital and digitised archival material at Churchill Archives Centre, UK.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: chuarchives
+github_username:  ChurchillArchvies
 
 # Build settings
-theme: minima
+#theme: minima
+remote-theme: pages-themes/slate@v0.2.0
 plugins:
-  - jekyll-feed
+#  - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
