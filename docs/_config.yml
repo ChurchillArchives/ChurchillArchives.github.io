@@ -12,10 +12,8 @@ color_scheme: "dark"
 nav_external_links:
   - title: Churchill Archives Centre website
     url: https://archives.chu.cam.ac.uk/
-    hide_icon: false # set to true to hide the external link icon - defaults to false
-    opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
 
-footer_content: "Contact us <a href=\"mailto:archives@chu.cam.ac.uk"\>here</a>"
+footer_content: "Contact us <a href=\"mailto:archives@chu.cam.ac.uk\">here</a>"
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
