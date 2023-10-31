@@ -2,7 +2,10 @@
 title: Manipulation
 layout: default
 nav_order: 7
+description: "Audio, video, and image file format conversion"
 ---
+# Manipulation: file format conversion
+
 This page details:
 * deriving access copies from  high resolution analogue materials that we have had digitised
 * deriving access copies of DVD video and CD-DA audio following our ingest procedures
@@ -35,6 +38,7 @@ By default, we use the following settings during conversion:
 ```
 ffmpeg -i "$in" -c:v libx264 -movflags faststart -pix_fmt yuv420p -vf yadif -c:a aac "$out" -hide_banner
 ```
+Where we have aliased 'ffmpeg' to the path of the ffmpeg.exe file, '$in' to the path of the input file, and '$out' to the path of the desired output file (which will be a .mp4).
 
 ### DVDs - concatenation 
 
@@ -48,3 +52,22 @@ Other than the input being changed to a 'concat' variant, we use the same proced
 ffmpeg -i "concat:VTS_01_1.VOB|VTS_01_2.VOB|VTS_01_3.VOB|VTS_01_4.VOB" -c:v libx264 -movflags faststart -pix_fmt yuv420p -vf yadif '..\..\CombinedVideo.mp4'
 ```
 Where we have aliased 'ffmpeg' to the full path of the ffmpeg.exe file, and we send the output down two levels, outside of what is assumed to be a VIDEO_TS folder.
+
+## Audio conversion
+
+### Single file copies
+
+For single files we use [ffmpeg](https://www.ffmpeg.org/) for conversion. In our experience, using this without providing any settings other than the input and output files generates acceptable file sizes for our typical use case. We output in either MP3 or M4A.
+
+```
+ffmpeg -i "$in" "$out"
+```
+Where we have aliased 'ffmpeg' to the path of the ffmpeg.exe file, '$in' to the path of the input file, and '$out' to the path of the desired output file (which will be a .mp3 or .m4a).
+
+### CD-DA - breaking up WAV files according to a CUE file
+
+Our ingest procedure for CD-DA audio generates a single WAV audio file along with a CUE file with details of how the tracks are divided.
+
+We use [Audacity](https://www.audacityteam.org/) to convert the files, and we use [J. Scott Smith's 'cue2lbl' tool](http://grimblefritz.com/audacity/cue2lbl.php) tool to convert the CUE files into Audacity labels.
+
+We open the WAV file and import the labels (Import -> Labels) to Audacity, then export as individual files (Export -> Export Multiple). We use all default options (export as MP3, split files based on labels, name files using label/track name). 
