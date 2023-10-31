@@ -9,5 +9,17 @@ search_tokenizer_separator: /[\s/]+/
 heading_anchors: true
 color_scheme: "dark"
 
+nav_external_links:
+  - title: Churchill Archives Centre website
+    url: https://archives.chu.cam.ac.uk/
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+    opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
+
+footer_content: "Contact us <a href=\"mailto:archives@chu.cam.ac.uk">here</a>"
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
 ga_tracking: G-BKFCY4YMVP
 ga_tracking_anonymize_ip: true
