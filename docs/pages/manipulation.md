@@ -51,7 +51,7 @@ Other than the input being changed to a 'concat' variant, we use the same proced
 ```
 ffmpeg -i "concat:VTS_01_1.VOB|VTS_01_2.VOB|VTS_01_3.VOB|VTS_01_4.VOB" -c:v libx264 -movflags faststart -pix_fmt yuv420p -vf yadif '..\..\CombinedVideo.mp4'
 ```
-Where we have aliased 'ffmpeg' to the full path of the ffmpeg.exe file, and we send the output down two levels, outside of what is assumed to be a VIDEO_TS folder.
+Where we have aliased 'ffmpeg' to the full path of the ffmpeg.exe file, and we send the output (named here 'CombinedVideo.mp4' down two levels, outside of what is assumed to be a VIDEO_TS folder.
 
 ## Audio conversion
 
