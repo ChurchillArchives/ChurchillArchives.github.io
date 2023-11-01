@@ -45,4 +45,4 @@ Where [Target] is replaced by a file path, such as 'C:\'. This is saved as a .PS
 
 ## Resources
 
-Adam Bertram's (Robocopy Commands: Data Migration, Folder Sync, and More)[https://adamtheautomator.com/robocopy] resource, alongside the (robocopy documentation)[https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy] was very useful in settling on the exact settings we use for this process.
+Adam Bertram's [Robocopy Commands: Data Migration, Folder Sync, and More](https://adamtheautomator.com/robocopy) resource, alongside the [robocopy documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy) was very useful in settling on the exact settings we use for this process.
