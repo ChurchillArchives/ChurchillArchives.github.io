@@ -12,6 +12,8 @@ This page outlines the different ingest workflows for digital archives, and whic
 
 # Carriers
 
+## In house
+
 At present, the majority of our born-digital material comes on discrete carriers; floppy disks, optical disks, memory sticks, and so on. 
 
 Following guidance such as that of the [Digital Archival traNsfer, iNgest, and packagiNg Group's Disk Imaging Decision Factors](https://dannng.github.io/disk-imaging-decision-factors.html), we perform logical copying unless there is a clear reason that a disk image is preferable, or logical ingest is otherwise not possible. 
@@ -21,6 +23,10 @@ At present, the exceptions to our logical copying ingest procedures are:
 * CA-DA formatted audio CDs. Our standard logical ingest procedures does not pick up the content of such disks. We have a dedicated workflow for these that creates a single WAV file from the audio on the disk along with a CUE file with track times. 
 * Items that fail to copy via our logical ingest procedures, for example due to being damaged. These are disk imaged as a fallback.
 * All magnetic media, such as floppy disks, are assumed to be at heightened risk of degredation since creation, and along with their relatively small total capacity, are all to be disk imaged.
+
+## External companies
+
+There are also carriers that we do not currently have the capacity to ingest in-house. Generally we will seek to use 3rd party digitisation companies where we only have a few examples of a given format across all our collections, such as for forms of digital storage tape (we have 2 examples of Digital Linear Tape) and minidisks (of which we have around 20), but aim to develop the capability to ingest others where we have a significant quantity.
 
 # Digital transfer
 
